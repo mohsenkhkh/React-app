@@ -1,0 +1,56 @@
+/* Login.module.css */
+.loginContainer {
+
+  max-width: 400px;
+  min-width: 400px;
+  margin:50px auto;
+  padding: 25px 20px 15px 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+form{
+  transition: .2s ;
+}
+form h3{
+  text-align: center;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.formGroup input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.submitButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submitButton:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}

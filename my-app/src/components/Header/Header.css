@@ -1,0 +1,47 @@
+/* src/components/Header.css */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: white;
+    height: 100px;
+  }
+  
+  .logo a {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navigation ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+  }
+  .navigation ul li{
+    padding: 10px 15px;
+  }
+  
+  .header a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all .4s ease;
+
+  }
+  
+  .navigation a:hover {
+    color: #00aced;
+  }
+  
+  .account-actions a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .account-actions a:hover {
+    color: #00aced;
+  }
+      
