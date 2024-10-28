@@ -16,14 +16,7 @@ function App() {
           <Route path="/login" element={<LoginPage />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/" element={<Home />} />
-          <Route
-            path="/dashboard"
-            element={
-              <PrivateRoute>
-                <div></div>
-              </PrivateRoute>
-            }
-          />
+          <Route path="/dashboard" element={<Dashboard />} />
           {/* Add other routes here */}
         </Routes>
       </Router>

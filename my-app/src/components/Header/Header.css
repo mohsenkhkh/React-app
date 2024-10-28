@@ -4,9 +4,17 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #333;
+    background-color: transparent;
     color: white;
     height: 100px;
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid #00394e ;
+  }
+  .navigation{
+    display: flex;
+    text-align: center;
+    gap: 15px;
   }
   
   .logo a {
@@ -21,7 +29,7 @@
     margin: 0;
   }
   .navigation ul li{
-    padding: 10px 15px;
+    padding: 10px 25px;
   }
   
   .header a {
@@ -33,15 +41,42 @@
   }
   
   .navigation a:hover {
-    color: #00aced;
+    color: #00394e;
   }
   
   .account-actions a {
     color: white;
     text-decoration: none;
   }
+  .account-actions {
+    align-items: center;
+    position: relative;
+    text-align: inherit;
+    display: flex;
+    gap: 5px;
+  }
   
   .account-actions a:hover {
-    color: #00aced;
+    color: #00394e;
   }
-      
+  .burger-menu{
+    width: 35px;
+    display: none;
+  }
+  .burger-menu div{
+    border-radius: 4px;
+    height: 4px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+  }
+  .layout-burger-3, .layout-burger-2{
+    margin-top: 4px;
+  }
+  @media only screen and (max-width:760px) {
+    .navigation{
+      display: none;
+    }
+    .burger-menu{
+      display: block;
+    }
+  }

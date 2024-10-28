@@ -9,3 +9,11 @@ body {
   background-color: #ff77ff;
   text-align: center;
 }
+.main-image{
+  height: 550px;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  background-image: url('../images/200514-dark-blue.jpg');
+  background-size: cover;
+}
