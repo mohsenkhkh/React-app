@@ -10,6 +10,7 @@
     position: fixed;
     width: 100%;
     border-bottom: 1px solid #00394e ;
+    z-index: 55;
   }
   .navigation{
     display: flex;

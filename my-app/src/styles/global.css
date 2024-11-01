@@ -2,6 +2,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  font-family: Arial, sans-serif; /* set to match the desired font */
 }
 .main-dashboard{
   height: 550px;
@@ -9,11 +10,125 @@ body {
   background-color: #ff77ff;
   text-align: center;
 }
-.main-image{
-  height: 550px;
+.main-image {
+  position: relative;
+  height: 650px;
   width: 100%;
   text-align: center;
-  align-items: center;
-  background-image: url('../images/200514-dark-blue.jpg');
+  background-image: url('../images/IMG_4360-scaled.jpg'); /* Fixed background with overlay */
   background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Fix the background */
+  overflow: hidden;
+}
+
+.main-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Optional: Additional overlay for shadow effect */
+  pointer-events: none; /* Ensures overlay does not interfere with child elements */
+}
+
+.main-image > * {
+  position: relative;
+  z-index: 2; /* Brings child elements above the shadow overlay */
+}
+
+
+.caption-main{
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.caption-main h1{
+  font-weight: bold;
+  font-size: 60px;
+}
+.caption-main p{
+  font-size: 18px;
+}
+.second-section{
+  height: 720px;
+  width: 100%;
+  background-color: #f8f8f8;
+  position: relative;
+  text-align: center;
+}
+.check-availability{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(37, 37, 37);
+  display: flex;
+  min-height: 50px;
+}
+.check-availability-form{
+  position: relative;
+  display: flex;
+}
+.check-availability-div{
+  border-right: solid 1px #000000 ;
+  position: relative;
+  height: 150px;
+  width: 210px;
+  text-align: center;
+  color: white;
+  padding: 0 5px;
+}
+.check-availability-div p{
+  font-size: bold;
+
+}
+.check-availability-div:last-child{
+  background-color: #ff9a68;
+  padding: 0;
+  border: none;
+  
+}
+.check-field{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+.check-field input{
+  border: none;
+  width: 110px;
+  margin-left: 5px;
+  background-color: transparent;
+  color: #777777;
+}
+.input-icon-flex{
+  display: flex;
+  align-items: center;
+}
+.check-field input:focus{
+  border: none;
+  outline: none;
+}
+.button-check-forms{
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: #ff9a68;
+  color: white;
+  font-weight: bold;
+}
+@media only screen and  ( max-width: 850px){
+  .check-availability-form{
+    flex-direction: column;
+  }
+}
+.loginPage{
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/IMG_4360-scaled.jpg');
 }

@@ -4,9 +4,9 @@ import Singup from '../components/auth/Signup';
 
 const LoginPage = () => {
   return (
-    <div>
-      <Login />
-    </div>
+      <div classname='LoginPage'>
+        <Login />
+      </div>    
   );
 };
 
