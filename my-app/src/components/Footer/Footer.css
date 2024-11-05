@@ -1,0 +1,19 @@
+.footer{
+    background-color: rgb(0,0,0, 0.8);
+    min-height: 50px ;
+    width: 100%;
+    padding: 50px 0 0 0;
+
+}
+.footer-columns{
+    display: flex;
+    
+}
+.footer-columns li{
+    list-style: none;
+}
+.footer-container{
+    width: 100%;
+    min-height: 50px;
+    padding: 0 30px;
+}
